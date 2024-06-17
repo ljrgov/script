@@ -10,7 +10,7 @@ import re
 # Repository details
 GITHUB_USERNAME = 'ljrgov'
 REPO_NAME = 'script'
-FOLDER_NAME = 'js_conf_snipet'
+FOLDER_NAME = 'js_conf_snippet'
 
 # GitHub API URL
 GITHUB_API = 'https://api.github.com'
@@ -48,7 +48,7 @@ def update_file(file_path, b64_encoded_content, sha):
 def generate_custom_header(file_name, file_extension):
     # Custom header format
     header_format = """
-// Quantumult X引用地址： https://raw.githubusercontent.com/{username}/{repo}/main/{folder}/{file}{ext}
+// Quantumult X引用地址： https://raw.githubusercontent.com/{username}/{repo}/master/{folder}/{file}{ext}
 // Surge/Shadowrocket 模块地址： https://raw.githubusercontent.com/{username}/{repo}/main/Surge/{file}.sgmodule
 // Loon 插件地址： https://raw.githubusercontent.com/{username}/{repo}/main/Loon/{file}.plugin
 // Stash 覆写地址： https://raw.githubusercontent.com/{username}/{repo}/main/Stash/{file}.stoverride
