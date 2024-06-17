@@ -14,7 +14,7 @@ on: # 注释内容默认关闭，如单一使用工作流使其自动运行取�
     branches:
       - main
     paths:
-      - 'scripts/**' # 监测qx脚本的文件夹
+      - 'js_conf_snippet/**' # 监测qx脚本的文件夹
   workflow_dispatch: # 这是手动触发
 
 jobs:
