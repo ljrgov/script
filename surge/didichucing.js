@@ -1,9 +1,10 @@
+// 此脚本用于过滤滴滴出行的部分内容
 // Surge 5 script
 
-// 此脚本用于过滤滴滴出行的部分内容
+const url = $request.url;
+if (!$response.body) $done({});
 
 let obj = JSON.parse($response.body);
-const url = $request.url;
 
 if (url.includes("/other/pGetSceneList")) {
   if (obj && obj.data && obj.data.scene_list instanceof Array) {
